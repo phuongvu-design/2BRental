@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cozy Retreat</title>
+    <link rel="stylesheet" href="css/style.css"> </head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="#">Book</a></li>
+                    
+                    <!-- <li><a href="#">Contact</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>We are a small team of passionate individuals dedicated to providing exceptional vacation rental experiences. Our love for travel and creating memorable moments inspired us to establish The Cozy Retreat, a place where families and friends can gather and create lasting memories.</p>
+                <p>We believe in the power of relaxation and rejuvenation, and we strive to create a welcoming and comfortable environment for our guests. Our attention to detail and commitment to excellent service ensure that your stay with us is nothing short of extraordinary.</p>
+                <p>We are committed to sustainable practices and strive to minimize our environmental impact. We believe in responsible tourism and encourage our guests to explore the natural beauty of our surroundings while respecting the local community.</p>
+            </div>
+        </section>
+        
+        <section class="contact">
+        <h2>Contact Us</h2>
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+    </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 - 2B Rental</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navUl = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+        navUl.classList.toggle('show');
+        hamburger.classList.toggle('open'); // Add this line
+});
+    </script>
+</body>
+</html>

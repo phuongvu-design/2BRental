@@ -1,40 +1,107 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Your away home">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Phuong Vu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2B Rental</title>
-    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-</head>
-
+    <title>The Cozy Retreat</title>
+    <link rel="stylesheet" href="css/style.css"> </head>
 <body>
-    <!--Navbar-->
-    <nav class="navbar">
-        
-        <div class="nav-item">
-            <a class="active" href="#home">Home</a>
-            <a href="#home">About</a>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Book</a></li>
+                    
+                    <!-- <li><a href="#">Contact</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>The Cozy Retreat</h1>
+                <img src="img/DSCF6561.jpg" alt="Cozy Living Room">
+            </div>
+        </section>
+
+        <section class="aesthetic">
+            <div class="container">
+                <img src="img/DSCF6610.jpg" alt="Aesthetic Image">
+                <div class="small">
+                    <h3>Aesthetic</h3>
+                    <p>A warm and enjoyable house for your trip. Our cozy retreat with all the comforts you need.</p>
+                    <img src="img/DSCF6541.jpg" alt="Aesthetic Image">
+                </div>
+            </div>
+        </section>
+
+        <section class="beautiful-view">
+            <div class="container">
+                <h2>WONDERFUL LAKE VIEW HOUSE</h2>
+                <p>Escape to your dream vacation in our charming house nestled in a peaceful neighborhood. Our home offers a cozy retreat with all the comforts you need. Relax on the spacious patio, unwind in the comfortable living room, and enjoy the fully equipped kitchen. With 3 bedrooms and 2 bathrooms, there's plenty of space for your family or group. The backyard also gives you a space to set up a barbecue.</p>
+                <div class="images">
+                    <img src="img/DSCF6642.jpg" alt="View Image 1">
+                    <img src="img/DSCF6487.jpg" alt="View Image 2">
+                    <img src="img/DSCF6616.jpg" alt="View Image 3">
+                    <img src="img/DSCF6589.jpg" alt="View Image 3">
+                    <img src="img/DSCF6471.jpg" alt="View Image 1">
+                    <img src="img/DSCF6522.jpg" alt="View Image 2">
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+              <h2>Customer Reviews</h2>
+                <div class="review-slider">
+                    <div class="review">
+                    <p>"My family and I stayed here for the second time and it was just as wonderful as the first.
+                    Great spaces and accommodations for 2 adults and 2 young"</p>
+                    <p class="author"><b>Jenn</b> - Fort Lauderdale, Florida</p>
+                    </div>
+                    <div class="review">
+                    <p>"Wow - what a wonderful home on a peaceful pond! This is absolutely one of the cleanest properties I have stayed in! I love the simple yet tasteful decor and the light and bright interior.</p>
+                    <p> Communication from the host was clear, concise, and friendly. The pond wildlife are a joy to wake up to (even if they wake up early!) and we enjoyed watching the fish swim around the dock. It was a busy trip visiting family but we hope to stay at this property again and enjoy some of the outdoor amenities more!</p>
+                    <p> We enjoyed a couple of meals at close by McSwiggan's Pub. Great food and service!</p>
+                    <p>Highly recommend this property if you need to stay at a convenient South Shore location!!"</p>
+                    <p class="author"><b>Jachqi</b> - Smyrna, Georgia</p>
+                    </div>
+                    <div class="review">
+                        <p>This is a peaceful home with a pretty pond view that is especially lovely in the morning.
+                            We slept very well here. I appreciated Phuong's flexibility with our check in time. You might be able to find a home even more surrounded by nature (i.e. with trails, forest, ocean) elsewhere on the south shore but this home strikes a nice balance of still providing a great view while being conveniently located to the highway and stores.</p>
+                        <p class="author"><b>Katherine</b> - Philadelphia, Pennsylvania</p>
+                    </div>
+                </div>
+                <a href="#" class="button">Book with us</a>
+            </div>
+          </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 - 2B Rental</p>
         </div>
-        <button class="hamburger">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-            <span class="hamburger-label"></span>
-        </button>
-    </nav>
+    </footer>
 
-    <!--Main contents-->
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+const navUl = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+  navUl.classList.toggle('show');
+  hamburger.classList.toggle('open');
+});
+    </script>
 </body>
-
 </html>
