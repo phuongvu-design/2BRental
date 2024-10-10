@@ -301,7 +301,7 @@ footer {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     header {
-        height: 120px;
+        height: 28px;
     }
 
     nav ul {
