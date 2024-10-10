@@ -300,6 +300,10 @@ footer {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+    header {
+        height: 120px;
+    }
+
     nav ul {
         display: none; /* Hide the navigation list */
     }
