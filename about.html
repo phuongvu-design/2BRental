@@ -59,11 +59,19 @@
     <script>
         const hamburger = document.querySelector('.hamburger');
         const navUl = document.querySelector('nav ul');
-
+      
         hamburger.addEventListener('click', () => {
-        navUl.classList.toggle('show');
-        hamburger.classList.toggle('open'); // Add this line
-});
-    </script>
+          navUl.classList.toggle('show');
+          hamburger.classList.toggle('open');
+        });
+      
+        // Add this code to remove the 'show' class on window resize
+        window.addEventListener('resize', () => {
+          if (window.innerWidth > 768) {
+            navUl.classList.remove('show');
+            hamburger.classList.remove('open');
+          }
+        });
+      </script>
 </body>
 </html>
