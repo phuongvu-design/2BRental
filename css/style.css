@@ -292,11 +292,6 @@ footer {
     gap: 20px;
   }
   
-  @media (max-width: 768px) {
-    .reviews .review-slider {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns in mobile view */
-    }
-  }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
@@ -401,4 +396,8 @@ footer {
     .beautiful-view .images {
         grid-template-columns: repeat(2, 1fr); /* 2 columns in mobile view */
     }
+
+    .reviews .review-slider {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns in mobile view */
+      }
 }
